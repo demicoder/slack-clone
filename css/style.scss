@@ -1,0 +1,25 @@
+@import '_variables';
+@import '_reset';
+
+
+body {
+    font-family: $font-stack;
+    background: $content-bg;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.sidebar {
+    background: $sidebar-color;
+    color: $white;
+    height: 100%;
+    position: absolute;
+    width: $sidebar-width;
+}
+
+.content {
+    margin-left: $sidebar-width;
+}
