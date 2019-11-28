@@ -18,6 +18,44 @@ body {
     height: 100%;
     position: absolute;
     width: $sidebar-width;
+
+    &__header {
+        padding: .8rem;
+
+        h1 {
+            font-weight: 800;
+            margin-right: 3px;
+        }
+
+
+    }
+
+    .user {
+        color: $sidbar-text-color;
+        margin-bottom: 10px;
+
+        &__availability {
+            font: {
+                size: 120%;
+                weight: 800;
+            }
+
+            margin-right: 5px;
+            display: inline-block;
+            color: map-get($user-availability, available);
+
+        }
+    }
+
+    .sidebar__search {
+        background: #5c325c;
+        cursor: pointer;
+        padding: 3px;
+        width: 100%;
+        display: block;
+        text-align: left;
+        border-radius: 3px;
+    }
 }
 
 .content {

@@ -5,8 +5,12 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 0;
+  color: inherit;
+  outline: 0;
   font-size: 100%;
   font-weight: 100%;
+  font-family: inherit;
 }
 
 body {
@@ -28,10 +32,42 @@ body {
   color: #fff;
   height: 100%;
   position: absolute;
-  width: 200px;
+  width: 220px;
+}
+
+.sidebar__header {
+  padding: .8rem;
+}
+
+.sidebar__header h1 {
+  font-weight: 800;
+  margin-right: 3px;
+}
+
+.sidebar .user {
+  color: #a790a7;
+  margin-bottom: 10px;
+}
+
+.sidebar .user__availability {
+  font-size: 120%;
+  font-weight: 800;
+  margin-right: 5px;
+  display: inline-block;
+  color: #2bac76;
+}
+
+.sidebar .sidebar__search {
+  background: #5c325c;
+  cursor: pointer;
+  padding: 3px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  border-radius: 3px;
 }
 
 .content {
-  margin-left: 200px;
+  margin-left: 220px;
 }
 /*# sourceMappingURL=style.css.map */
