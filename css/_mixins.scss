@@ -10,6 +10,16 @@
         width: 100%;
         color: $sidbar-text-color;
         font-weight: 600;
+        display: inline-block;
+
+        .unread-msg {
+            float: right;
+            background: $unread-msg-count;
+            color: $white;
+            padding: 2px 10px;
+            border-radius: 30%;
+            text-align: center;
+        }
 
         font: {
             size: 85%;

@@ -110,8 +110,18 @@ body {
   width: 100%;
   color: #a790a7;
   font-weight: 600;
+  display: inline-block;
   font-size: 85%;
   font-weight: 600;
+}
+
+.sidebar__box li a .unread-msg {
+  float: right;
+  background: #eb4d5c;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 30%;
+  text-align: center;
 }
 
 .sidebar__box li a:hover {
