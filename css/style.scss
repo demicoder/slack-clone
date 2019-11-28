@@ -23,7 +23,9 @@ body {
     &__header {
         padding: $sidebar-box-padding;
 
+
         h1 {
+            color: $white;
             font-weight: 800;
             margin-right: 3px;
         }
@@ -61,28 +63,55 @@ body {
         margin-top: 1.5rem;
 
         &--header {
-            display: flex;
             padding: ($sidebar-box-padding - .5) $sidebar-box-padding;
             line-height: 1.5;
 
+            a {
+                display: block;
+                text-decoration: none;
+                display: flex;
+            }
+
             >* {
-                flex: 1;
                 font-weight: 900;
             }
 
+            h2 {
+                flex: 1.5;
+            }
+
             &--icon {
+                flex: .5;
                 text-align: right;
                 margin-right: .5rem;
 
-                a {
-                    text-decoration: none;
-                }
+
             }
         }
 
         @include sidebar_section;
         @include sidebar_link_group;
     }
+
+    .sidebar-msg {
+        &__status {
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        .active:after {
+            content: '•';
+            color: map-get($user-availability, available);
+        }
+
+        .offline:before {
+            content: '•';
+            color: $sidbar-text-color;
+        }
+
+
+    }
+
 
 }
 

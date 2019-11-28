@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *:after,
 *:before {
@@ -39,6 +40,7 @@ body {
 }
 
 .sidebar__header h1 {
+  color: #fff;
   font-weight: 800;
   margin-right: 3px;
 }
@@ -71,27 +73,34 @@ body {
 }
 
 .sidebar__box--header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 0.3rem 0.8rem;
   line-height: 1.5;
 }
 
+.sidebar__box--header a {
+  display: block;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .sidebar__box--header > * {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   font-weight: 900;
 }
 
-.sidebar__box--header--icon {
-  text-align: right;
-  margin-right: .5rem;
+.sidebar__box--header h2 {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
 }
 
-.sidebar__box--header--icon a {
-  text-decoration: none;
+.sidebar__box--header--icon {
+  -webkit-box-flex: .5;
+      -ms-flex: .5;
+          flex: .5;
+  text-align: right;
+  margin-right: .5rem;
 }
 
 .sidebar__box li a {
@@ -112,6 +121,21 @@ body {
 .sidebar__box li a.active {
   background: #1164a3;
   color: #fff;
+}
+
+.sidebar .sidebar-msg__status {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.sidebar .sidebar-msg .active:after {
+  content: '•';
+  color: #2bac76;
+}
+
+.sidebar .sidebar-msg .offline:before {
+  content: '•';
+  color: #a790a7;
 }
 
 .content {
