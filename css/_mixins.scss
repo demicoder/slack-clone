@@ -12,6 +12,12 @@
         font-weight: 600;
         display: inline-block;
 
+        i {
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 85%;
+        }
+
         .unread-msg {
             float: right;
             background: $unread-msg-count;

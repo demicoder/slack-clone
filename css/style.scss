@@ -17,7 +17,7 @@ body {
     background: $sidebar-color;
     color: $sidbar-text-color;
     height: 100%;
-    position: absolute;
+    position: fixed;
     width: $sidebar-width;
 
     &__header {
@@ -50,9 +50,10 @@ body {
     }
 
     .sidebar__search {
-        background: #5c325c;
+        background: lighten($sidebar-color, 10%);
+        font-size: 85%;
+        padding: 5px;
         cursor: pointer;
-        padding: 3px;
         width: 100%;
         display: block;
         text-align: left;
@@ -94,20 +95,18 @@ body {
     }
 
     .sidebar-msg {
+
         &__status {
+            font-size: 85%;
             margin-right: 5px;
-            display: inline-block;
+            vertical-align: text-top;
         }
 
-        .active:after {
-            content: '•';
+        .active {
             color: map-get($user-availability, available);
         }
 
-        .offline:before {
-            content: '•';
-            color: $sidbar-text-color;
-        }
+
 
 
     }
