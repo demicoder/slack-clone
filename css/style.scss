@@ -1,4 +1,5 @@
 @import '_variables';
+@import '_mixins';
 @import '_reset';
 
 
@@ -14,13 +15,13 @@ body {
 
 .sidebar {
     background: $sidebar-color;
-    color: $white;
+    color: $sidbar-text-color;
     height: 100%;
     position: absolute;
     width: $sidebar-width;
 
     &__header {
-        padding: .8rem;
+        padding: $sidebar-box-padding;
 
         h1 {
             font-weight: 800;
@@ -31,7 +32,6 @@ body {
     }
 
     .user {
-        color: $sidbar-text-color;
         margin-bottom: 10px;
 
         &__availability {
@@ -56,6 +56,34 @@ body {
         text-align: left;
         border-radius: 3px;
     }
+
+    &__box {
+        margin-top: 1.5rem;
+
+        &--header {
+            display: flex;
+            padding: ($sidebar-box-padding - .5) $sidebar-box-padding;
+            line-height: 1.5;
+
+            >* {
+                flex: 1;
+                font-weight: 900;
+            }
+
+            &--icon {
+                text-align: right;
+                margin-right: .5rem;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        @include sidebar_section;
+        @include sidebar_link_group;
+    }
+
 }
 
 .content {

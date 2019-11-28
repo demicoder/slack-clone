@@ -1,0 +1,28 @@
+@mixin sidebar_section {
+    margin-bottom: 1rem;
+}
+
+@mixin sidebar_link_group {
+    li a {
+        padding: ($sidebar-box-padding - .3) $sidebar-box-padding;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        color: $sidbar-text-color;
+        font-weight: 600;
+
+        font: {
+            size: 85%;
+            weight: 600;
+        }
+
+        &:hover {
+            background: darken($sidebar-color, 3);
+        }
+    }
+
+    li a.active {
+        background: $sidebar-active-link;
+        color: $white;
+    }
+}
