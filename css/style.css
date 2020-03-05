@@ -12,8 +12,12 @@
   font-family: inherit;
 }
 
+li {
+  list-style: none;
+}
+
 body {
-  font-family: Lato, sans-serif;
+  font-family: system-ui;
   background: #f8f8f8;
 }
 
@@ -96,11 +100,11 @@ body {
 }
 
 .sidebar__box--header--icon {
-  -webkit-box-flex: .5;
-      -ms-flex: .5;
-          flex: .5;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
   text-align: right;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .sidebar__box li a {
@@ -149,7 +153,46 @@ body {
   color: #2bac76;
 }
 
-.content {
+.app {
+  width: 100%;
   margin-left: 220px;
+}
+
+.app__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #c5c5c5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app__info--name {
+  font-size: 105%;
+}
+
+.app__options ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__options ul li {
+  margin-left: 1rem;
+}
+
+.app__options ul li button {
+  cursor: pointer;
+}
+
+.app__search-form input[type="search"] {
+  border: 2px solid #afafaf;
+  padding: 5px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,139 @@
+@import "_variables";
+@import "_mixins";
+@import "_reset";
+
+body {
+  font-family: $font-stack;
+  background: $content-bg;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.sidebar {
+  background: $sidebar-color;
+  color: $sidebar-text-color;
+  height: 100%;
+  position: fixed;
+  width: $sidebar-width;
+
+  &__header {
+    padding: $sidebar-box-padding;
+
+    h1 {
+      color: $white;
+      font-weight: 800;
+      margin-right: 3px;
+    }
+  }
+
+  .user {
+    margin-bottom: 10px;
+
+    &__availability {
+      font: {
+        size: 120%;
+        weight: 800;
+      }
+
+      margin-right: 5px;
+      display: inline-block;
+      color: map-get($user-availability, available);
+    }
+  }
+
+  .sidebar__search {
+    background: lighten($sidebar-color, 10%);
+    font-size: 85%;
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    text-align: left;
+    border-radius: 3px;
+  }
+
+  &__box {
+    margin-top: 1.5rem;
+
+    &--header {
+      padding: ($sidebar-box-padding - 0.5) $sidebar-box-padding;
+      line-height: 1.5;
+
+      a {
+        display: block;
+        text-decoration: none;
+        display: flex;
+      }
+
+      > * {
+        font-weight: 900;
+      }
+
+      h2 {
+        flex: 1.5;
+      }
+
+      &--icon {
+        flex: 0.5;
+        text-align: right;
+        margin-right: 0.5rem;
+      }
+    }
+
+    @include sidebar_section;
+    @include sidebar_link_group;
+  }
+
+  .sidebar-msg {
+    &__status {
+      font-size: 85%;
+      margin-right: 5px;
+      vertical-align: text-top;
+    }
+
+    .active {
+      color: map-get($user-availability, available);
+    }
+  }
+}
+
+.app {
+  width: 100%;
+  margin-left: $sidebar-width;
+  &__header {
+    display: flex;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #c5c5c5;
+    justify-content: space-between;
+  }
+  &__info {
+    &--name {
+      font-size: 150%;
+    }
+  }
+
+  &__options {
+    ul {
+      display: flex;
+      align-items: center;
+    }
+    ul li {
+      // display:inline-block;
+      margin-left: 1rem;
+      button {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__search-form {
+    input[type="search"] {
+      border: 2px solid #afafaf;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+}
