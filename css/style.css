@@ -8,6 +8,8 @@
   border: 0;
   color: inherit;
   outline: 0;
+  background: none;
+  font-weight: normal;
   font-size: 100%;
   font-family: inherit;
 }
@@ -162,35 +164,43 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 1.2rem;
+  padding: 1rem 1.5rem;
   border-bottom: 1px solid #c5c5c5;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-weight: 700 !important;
 }
 
-.app__info--name {
-  font-size: 105%;
+.app__header--title {
+  font-size: 150%;
+  font-weight: 700;
 }
 
-.app__options ul {
+.app__header--options ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.app__options ul li {
+.app__header--options ul li {
   margin-left: 1rem;
 }
 
-.app__options ul li button {
-  cursor: pointer;
+.app__header--options ul li a {
+  display: inline-block;
+  text-decoration: none;
 }
 
-.app__search-form input[type="search"] {
+.app__header--search-form input[type="search"] {
   border: 2px solid #afafaf;
   padding: 5px;
   border-radius: 5px;

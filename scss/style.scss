@@ -105,35 +105,40 @@ body {
   margin-left: $sidebar-width;
   &__header {
     display: flex;
-    padding: 1rem 1.2rem;
+    padding: 1rem 1.5rem;
     border-bottom: 1px solid #c5c5c5;
     justify-content: space-between;
-  }
-  &__info {
-    &--name {
-      font-size: 150%;
-    }
-  }
+    font-weight: 700 !important;
 
-  &__options {
-    ul {
-      display: flex;
-      align-items: center;
-    }
-    ul li {
-      // display:inline-block;
-      margin-left: 1rem;
-      button {
-        cursor: pointer;
+    &--title {
+      font: {
+        size: 150%;
+        weight: 700;
       }
     }
-  }
 
-  &__search-form {
-    input[type="search"] {
-      border: 2px solid #afafaf;
-      padding: 5px;
-      border-radius: 5px;
+    &--options {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      ul li {
+        margin-left: 1rem;
+        a {
+          display: inline-block;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &--search-form {
+      input[type="search"] {
+        border: 2px solid #afafaf;
+        padding: 5px;
+        border-radius: 5px;
+      }
     }
   }
 }

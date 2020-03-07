@@ -1,100 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Slack Clone</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css" />
     <!-- Font Awesome -->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="wrapper">
-        <div class="sidebar">
-            <div class="sidebar__header">
-                <h1>Company Name </h1>
-                <div class="user">
-                    <p class="user__username"><span class="user__availability">&bull;</span>Maverick</p>
-                </div>
-                <button class="sidebar__search"><i class="fas fa-search"></i>Jump to</button>
-            </div>
-
-            <div class="sidebar__box">
-                <ul>
-                    <li><a href="#"><i class="fas fa-comment"></i>Threads</a></li>
-                    <li><a href="#"><i class="fas fa-th"></i>Apps</a></li>
-                </ul>
-            </div>
-
-            <div class="sidebar__box">
-                <ul>
-                    <li><a href="#"><i class="fas fa-plus"></i>Add a Channel</a></li>
-                </ul>
-            </div>
-
-            <div class="sidebar__box">
-                <div class="sidebar__box--header">
-                    <a href="#">
-                        <h2>Channels</h2>
-                        <span class="sidebar__box--header--icon"><i class="fas fa-plus-circle"></i></span>
-                    </a>
-                </div>
-                <ul>
-                    <li><a href="#" class="active"><i class="fas fa-hashtag"></i>general</a></li>
-                    <li><a href="#"><i class="fas fa-hashtag"></i>random</a></li>
-                    <li><a href="#"><i class="fas fa-lock"></i>private<span class="unread-msg">4</span></a></li>
-                </ul>
-            </div>
-
-            <div class="sidebar__box sidebar-msg">
-                <div class="sidebar__box--header">
-                    <a href="#">
-                        <h2>Direct Messages</h2>
-                        <span class="sidebar__box--header--icon"><i class="fas fa-plus-circle"></i></span>
-                    </a>
-                </div>
-                <ul>
-                    <li><a href="#"><span class="sidebar-msg__status active"><i
-                                    class="fas fa-circle"></i></span>Maverick</a></li>
-                    <li><a href="#"><span class="sidebar-msg__status active"><i
-                                    class="fas fa-heart"></i></span>Slackbot</a></li>
-                    <li><a href="#"><span class="sidebar-msg__status active"><i class="fas fa-circle"></i></span>Kuma</a>
-                    </li>
-                    <li><a href="#"><span class="sidebar-msg__status offline"><i
-                                    class="fas fa-dot-circle"></i></span>Derick</a></li>
-                </ul>
-            </div>
-
-
+      <div class="sidebar">
+        <div class="sidebar__header">
+          <h1>Company Name</h1>
+          <div class="user">
+            <p class="user__username">
+              <span class="user__availability">&bull;</span>Maverick
+            </p>
+          </div>
+          <button class="sidebar__search">
+            <i class="fas fa-search"></i>Jump to
+          </button>
         </div>
 
-        <div class="app">
-
-            <header class="app__header">
-                <header class="app__info">
-                    <h2 class="app__info--name">general</h2>
-                </header>
-
-                <div class="app__options">
-                    <ul>
-                        <li><button>Call</button></li>
-                        <li><button>i</button></li>
-                        <li><button>Settings</button></li>
-                        <li><form class="app__search-form"><input placeholder="Search" type="search"></form></li>
-                        <li><button>@</button></li>
-                        <li><button>*</button></li>
-                        <li><button>:</button></li>
-                    </ul>
-                </div>
-            </header>
-
+        <div class="sidebar__box">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-comment"></i>Threads</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-th"></i>Apps</a>
+            </li>
+          </ul>
         </div>
 
+        <div class="sidebar__box">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-plus"></i>Add a Channel</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar__box">
+          <div class="sidebar__box--header">
+            <a href="#">
+              <h2>Channels</h2>
+              <span class="sidebar__box--header--icon"
+                ><i class="fas fa-plus-circle"></i
+              ></span>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="#" class="active"
+                ><i class="fas fa-hashtag"></i>general</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-hashtag"></i>random</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-lock"></i>private<span class="unread-msg"
+                  >4</span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar__box sidebar-msg">
+          <div class="sidebar__box--header">
+            <a href="#">
+              <h2>Direct Messages</h2>
+              <span class="sidebar__box--header--icon"
+                ><i class="fas fa-plus-circle"></i
+              ></span>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="#"
+                ><span class="sidebar-msg__status active"
+                  ><i class="fas fa-circle"></i></span
+                >Maverick</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="sidebar-msg__status active"
+                  ><i class="fas fa-heart"></i></span
+                >Slackbot</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="sidebar-msg__status active"
+                  ><i class="fas fa-circle"></i></span
+                >Kuma</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="sidebar-msg__status offline"
+                  ><i class="fas fa-dot-circle"></i></span
+                >Derick</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="app">
+        <header class="app__header">
+          <header class="app__info">
+            <h2 class="app__header--title">general</h2>
+          </header>
+
+          <div class="app__header--options">
+            <ul>
+              <li><a href="#">Call</a></li>
+              <li><a href="#">i</a></li>
+              <li><a href="#">Settings</a></li>
+              <li>
+                <form class="app__header--search-form">
+                  <input placeholder="Search" type="search" />
+                </form>
+              </li>
+              <li><a href="#">@</a></li>
+              <li><a href="#">*</a></li>
+              <li><a href="#">:</a></li>
+            </ul>
+          </div>
+        </header>
+
+        <div class="app__content">
+          hello
+        </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
