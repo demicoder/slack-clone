@@ -169,7 +169,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-weight: 700 !important;
+  font-weight: 700;
 }
 
 .app__header--title {
@@ -202,7 +202,41 @@ body {
 
 .app__header--search-form input[type="search"] {
   border: 2px solid #afafaf;
-  padding: 5px;
+  padding: 7px;
   border-radius: 5px;
+}
+
+.app__content {
+  padding: 1.5rem;
+}
+
+.message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.message__author {
+  margin-right: 1rem;
+}
+
+.message__author--img {
+  border-radius: 7px;
+  width: 60px;
+  height: 60px;
+}
+
+.message__author--name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.message__author--name a {
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.message__author--name a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

@@ -103,12 +103,14 @@ body {
 .app {
   width: 100%;
   margin-left: $sidebar-width;
+
+  // App content
   &__header {
     display: flex;
     padding: 1rem 1.5rem;
     border-bottom: 1px solid #c5c5c5;
     justify-content: space-between;
-    font-weight: 700 !important;
+    font-weight: 700;
 
     &--title {
       font: {
@@ -136,8 +138,40 @@ body {
     &--search-form {
       input[type="search"] {
         border: 2px solid #afafaf;
-        padding: 5px;
+        padding: 7px;
         border-radius: 5px;
+      }
+    }
+  }
+
+  //App Content
+  &__content {
+    padding: 1.5rem;
+  }
+}
+
+.message {
+  display: flex;
+
+  &__author {
+    margin-right: 1rem;
+    &--img {
+      border-radius: 7px;
+      width: 60px;
+      height: 60px;
+    }
+
+    &--name {
+      a {
+        text-decoration: none;
+        font-weight: inherit;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      font: {
+        weight: 700;
+        size: 1rem;
       }
     }
   }
