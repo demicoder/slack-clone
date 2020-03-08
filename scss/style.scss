@@ -176,3 +176,23 @@ body {
     }
   }
 }
+
+// Compose message
+.compose {
+  display: flex;
+  margin-top: 1rem;
+  border: {
+    style: solid;
+    color: #c5c5c5;
+    width: 3px;
+    radius: 7px;
+  }
+  align-items: center;
+  flex-direction: row;
+  &__textarea {
+    resize: none;
+    padding: 7px;
+    border-left: #c5c5c5 3px solid;
+    width: 100%;
+  }
+}

@@ -239,4 +239,29 @@ body {
 .message__author--name a:hover {
   text-decoration: underline;
 }
+
+.compose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  border-style: solid;
+  border-color: #c5c5c5;
+  border-width: 3px;
+  border-radius: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.compose__textarea {
+  resize: none;
+  padding: 7px;
+  border-left: #c5c5c5 3px solid;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
