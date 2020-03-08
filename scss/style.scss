@@ -21,7 +21,6 @@ body {
 
   &__header {
     padding: $sidebar-box-padding;
-
     h1 {
       color: $white;
       font-weight: 800;
@@ -63,8 +62,6 @@ body {
       line-height: 1.5;
 
       a {
-        display: block;
-        text-decoration: none;
         display: flex;
       }
 
@@ -107,10 +104,15 @@ body {
   // App content
   &__header {
     display: flex;
+    position: fixed;
+    z-index: 10;
+    width: 90%;
     padding: 1rem 1.5rem;
     border-bottom: 1px solid #c5c5c5;
     justify-content: space-between;
     font-weight: 700;
+    background: $content-bg;
+    height: 10vh;
 
     &--title {
       font: {
@@ -130,7 +132,6 @@ body {
         margin-left: 1rem;
         a {
           display: inline-block;
-          text-decoration: none;
         }
       }
     }
@@ -146,14 +147,19 @@ body {
 
   //App Content
   &__content {
+    background: #f8f8f8;
+    height: 90vh;
+    margin-top: 4.5rem;
     padding: 1.5rem;
   }
 }
 
 .message {
   display: flex;
+  margin-bottom: 1rem;
 
   &__author {
+    position: relative;
     margin-right: 1rem;
     &--img {
       border-radius: 7px;
@@ -163,7 +169,6 @@ body {
 
     &--name {
       a {
-        text-decoration: none;
         font-weight: inherit;
         &:hover {
           text-decoration: underline;
@@ -180,11 +185,14 @@ body {
 // Compose message
 .compose {
   display: flex;
-  margin-top: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  width: 80%;
+
   border: {
     style: solid;
-    color: #c5c5c5;
-    width: 3px;
+    color: #929292;
+    width: 2px;
     radius: 7px;
   }
   align-items: center;
@@ -192,7 +200,27 @@ body {
   &__textarea {
     resize: none;
     padding: 7px;
-    border-left: #c5c5c5 3px solid;
     width: 100%;
+  }
+  &__icon {
+    padding: 0 10px;
+    border-right: #929292 2px solid;
+    color: #929292;
+    p {
+      font: {
+        weight: 500;
+        size: 2rem;
+      }
+    }
+  }
+
+  &__controls {
+    // position: absolute;
+    // right: 0;
+    display: flex;
+    p {
+      color: #929292;
+      margin-right: 0.5rem;
+    }
   }
 }

@@ -55,9 +55,7 @@
           </div>
           <ul>
             <li>
-              <a href="#" class="active"
-                ><i class="fas fa-hashtag"></i>general</a
-              >
+              <a href="#" class="active"><i class="fas fa-hashtag"></i>humor</a>
             </li>
             <li>
               <a href="#"><i class="fas fa-hashtag"></i>random</a>
@@ -119,7 +117,7 @@
         <!-- App header -->
         <header class="app__header">
           <div class="app__info">
-            <h2 class="app__header--title">general</h2>
+            <h2 class="app__header--title">humor</h2>
           </div>
 
           <div class="app__header--options">
@@ -141,6 +139,7 @@
 
         <div class="app__content">
           <!-- App messages start here-->
+          <!-- Messsage 1 -->
           <div class="message">
             <div class="message__author">
               <a href="#"
@@ -154,25 +153,57 @@
 
             <div>
               <h3 class="message__author--name"><a href="#">Maverick</a></h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-                expedita sint qui quam iste voluptatem cum reprehenderit,
-                cupiditate assumenda ullam?
-              </p>
+              <div class="message__body">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil expedita sint qui quam iste voluptatem cum
+                  reprehenderit, cupiditate assumenda ullam?
+                </p>
+              </div>
             </div>
+          </div>
+
+          <!-- Message 2 -->
+          <div class="message">
+            <div class="message__author">
+              <a href="#"
+                ><img
+                  src="img/kuma_thumb.jpg"
+                  class="message__author--img"
+                  alt="#"
+                />
+              </a>
+            </div>
+
+            <div>
+              <h3 class="message__author--name"><a href="#">Kuma</a></h3>
+              <div class="message__body">
+                <p class="">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dignissimos blanditiis consectetur illum reiciendis odio
+                  suscipit magni nostrum dolorum, id vel repudiandae sint
+                  facilis perspiciatis accusantium ullam, dolor voluptatibus
+                  quia mollitia.
+                </p>
+              </div>
+            </div>
+
+            <!-- Messages end -->
           </div>
 
           <!-- Compose message box -->
           <div class="compose">
-            <div><p>+</p></div>
+            <div class="compose__icon"><p>+</p></div>
             <textarea
               name=""
               class="compose__textarea"
               rows="1"
-              placeholder="Message #general"
-            >
-            </textarea>
-            <div><p>+</p></div>
+              placeholder="Message #humor"
+            ></textarea>
+            <div class="compose__controls">
+              <p><a href="#">@</a></p>
+              <p><a href="#">(0)</a></p>
+            </div>
           </div>
         </div>
       </div>
