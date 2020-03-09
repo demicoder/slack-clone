@@ -139,6 +139,7 @@
 
         <div class="app__content">
           <!-- App messages start here-->
+
           <!-- Messsage 1 -->
           <div class="message">
             <div class="message__author">
@@ -177,8 +178,8 @@
 
             <div>
               <h3 class="message__author--name"><a href="#">Kuma</a></h3>
-              <div class="message__body">
-                <p class="">
+              <div class="message__body message__body--normal">
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Dignissimos blanditiis consectetur illum reiciendis odio
                   suscipit magni nostrum dolorum, id vel repudiandae sint
@@ -187,19 +188,36 @@
                 </p>
               </div>
             </div>
-
-            <!-- Messages end -->
           </div>
+
+          <!-- Message 3 -->
+          <div class="message">
+            <div class="message__author">
+              <a href="#"
+                ><img
+                  src="img/derick_thumb.jpg"
+                  class="message__author--img"
+                  alt="#"
+                />
+              </a>
+            </div>
+
+            <div>
+              <h3 class="message__author--name"><a href="#">Derick</a></h3>
+              <div class="message__body message__body--notification">
+                <p>Joined #humor by invitation from Maverick</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Messages end -->
 
           <!-- Compose message box -->
           <div class="compose">
             <div class="compose__icon"><p>+</p></div>
-            <textarea
-              name=""
-              class="compose__textarea"
-              rows="1"
-              placeholder="Message #humor"
-            ></textarea>
+            <form method="post" action="#" class="compose__form">
+              <input type="text" class="compose__input" />
+            </form>
             <div class="compose__controls">
               <p><a href="#">@</a></p>
               <p><a href="#">(0)</a></p>

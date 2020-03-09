@@ -98,6 +98,7 @@ body {
 }
 
 .app {
+  position: relative;
   width: 100%;
   margin-left: $sidebar-width;
 
@@ -106,13 +107,12 @@ body {
     display: flex;
     position: fixed;
     z-index: 10;
-    width: 90%;
-    padding: 1rem 1.5rem;
+    width: 85%;
+    padding: 1rem 2rem 1rem 1rem;
     border-bottom: 1px solid #c5c5c5;
     justify-content: space-between;
     font-weight: 700;
     background: $content-bg;
-    height: 10vh;
 
     &--title {
       font: {
@@ -148,7 +148,8 @@ body {
   //App Content
   &__content {
     background: #f8f8f8;
-    height: 90vh;
+    height: 78vh;
+    overflow: auto;
     margin-top: 4.5rem;
     padding: 1.5rem;
   }
@@ -156,7 +157,7 @@ body {
 
 .message {
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 
   &__author {
     position: relative;
@@ -168,6 +169,8 @@ body {
     }
 
     &--name {
+      line-height: 1.5;
+      margin-top: -5px;
       a {
         font-weight: inherit;
         &:hover {
@@ -175,9 +178,20 @@ body {
         }
       }
       font: {
-        weight: 700;
-        size: 1rem;
+        weight: 600;
+        size: 1.1rem;
       }
+    }
+  }
+
+  &__body {
+    font-size: 110%;
+    &--normal {
+      font-weight: 500;
+    }
+    &--notification {
+      color: #646464;
+      font-style: italic;
     }
   }
 }
@@ -185,7 +199,8 @@ body {
 // Compose message
 .compose {
   display: flex;
-  position: absolute;
+  background: $content-bg;
+  position: fixed;
   bottom: 1rem;
   width: 80%;
 
@@ -197,8 +212,13 @@ body {
   }
   align-items: center;
   flex-direction: row;
-  &__textarea {
-    resize: none;
+
+  &__form {
+    width: 100%;
+    display: block;
+  }
+  &__input {
+    display: block;
     padding: 7px;
     width: 100%;
   }
