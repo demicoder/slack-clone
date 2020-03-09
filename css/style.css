@@ -222,8 +222,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.5rem;
-  -webkit-transition: 0.4s ease-in;
-  transition: 0.4s ease-in;
+  -webkit-animation: slideUp 0.4s;
+          animation: slideUp 0.4s;
 }
 
 .message__author {
@@ -331,5 +331,31 @@ body {
 .compose__controls p {
   color: #929292;
   margin-right: 0.5rem;
+}
+
+@-webkit-keyframes slideUp {
+  from {
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+// Message
 class Message {
   constructor(text, author = 'Stranger') {
     this.author = author;
@@ -5,6 +6,7 @@ class Message {
   }
 }
 
+// User
 class User {
   constructor(name, thumb = 'mave_thumb.jpg') {
     this.name = name;
@@ -12,6 +14,7 @@ class User {
   }
 }
 
+// User Interface
 class Ui {
   static addMessage = message => {
     const html = `<div class="message">
@@ -38,10 +41,11 @@ class Ui {
 
   // Enable inputs
   static enable = (...inputs) =>
-    input.forEach(el => input.removeAttribute('disabled'));
+    inputs.forEach(input => input.removeAttribute('disabled'));
 
   // Disable inputs
-  static disable = input => input.setAttribute('disabled', 'disabled');
+  static disable = (...inputs) =>
+    inputs.forEach(input => input.setAttribute('disabled', 'disabled'));
 }
 
 // DOM Elements

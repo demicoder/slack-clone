@@ -158,7 +158,7 @@ body {
 .message {
   display: flex;
   margin-bottom: 1.5rem;
-  transition: 0.4s ease-in;
+  animation: slideUp 0.4s;
 
   &__author {
     position: relative;
@@ -257,5 +257,16 @@ body {
       color: #929292;
       margin-right: 0.5rem;
     }
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(7px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
