@@ -237,6 +237,19 @@ body {
   height: 60px;
 }
 
+.message__author--label {
+  padding: 2px 4px;
+  position: absolute;
+  border: 2px solid #f8f8f8;
+  border-radius: 5px;
+  font-size: 90%;
+  bottom: -5px;
+  right: -5px;
+  background: #0f89ad;
+  color: #fff;
+  font-weight: 600;
+}
+
 .message__author--name {
   line-height: 1.5;
   margin-top: -5px;

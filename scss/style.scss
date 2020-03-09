@@ -169,6 +169,19 @@ body {
       height: 60px;
     }
 
+    &--label {
+      padding: 2px 4px;
+      position: absolute;
+      border: 2px solid $content-bg;
+      border-radius: 5px;
+      font-size: 90%;
+      bottom: -5px;
+      right: -5px;
+      background: #0f89ad;
+      color: #fff;
+      font-weight: 600;
+    }
+
     &--name {
       line-height: 1.5;
       margin-top: -5px;

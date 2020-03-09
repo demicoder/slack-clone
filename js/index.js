@@ -16,17 +16,20 @@ class Ui {
   static addMessage = message => {
     const html = `<div class="message">
         <div class="message__author">
-          <a href="#">
-            <img src="img/${message.author.thumb}" class="message__author--img" alt="#"/>
-          </a>
+            <p class="message__author--label">ST</p>
+            <a href="#">
+              <img src="img/${message.author.thumb}" class="message__author--img" alt="#"/>
+            </a>
         </div>
+        
         <div>
-          <h3 class="message__author--name"><a href="#">${message.author.name}</a></h3>
+          <h3 class="message__author--name">
+          <a href="#">${message.author.name}</a></h3>
             <div class="message__body">
                 <p>${message.text}</p>
             </div>
         </div>
-      </div>`;
+        </div>`;
     elements.messageList.insertAdjacentHTML('beforeend', html);
   };
 
