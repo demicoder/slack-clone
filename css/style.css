@@ -222,6 +222,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.5rem;
+}
+
+.message__new {
   -webkit-animation: slideUp 0.4s;
           animation: slideUp 0.4s;
 }

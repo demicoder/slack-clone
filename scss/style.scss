@@ -158,7 +158,10 @@ body {
 .message {
   display: flex;
   margin-bottom: 1.5rem;
-  animation: slideUp 0.4s;
+
+  &__new {
+    animation: slideUp 0.4s;
+  }
 
   &__author {
     position: relative;
